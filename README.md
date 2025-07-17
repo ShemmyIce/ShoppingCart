@@ -1,71 +1,95 @@
-# Shopping Cart GUI
+# Shopping Cart Management System
 
-**Description**: (Add a brief description of your project here.)
+This is a JavaFX-based Shopping Cart Management System developed as part of a group project. It simulates key functionalities of an e-commerce platform including user authentication, product browsing, cart management, and order processing.
+
+
+## 📁 Project Structure
+
+Group Project/
+├── GUI-wireframe.drawio # Wireframe design (Draw.io)
+├── Shopping_cart_manage_system_flow_map.drawio # System flow diagram
+├── Shopping_cart_manage_system_flow_map.drawio.pdf
+├── Shopping_Cart_Management_system/
+│ └── ShoppingCart/
+│ ├── .git/ # Git version control (if applicable)
+│ ├── .classpath / .project # Eclipse metadata
+│ ├── pom.xml # Maven config file
+│ ├── *.ser # Serialized data structures (e.g., cart.ser)
+│ ├── products.csv # Product list
+│ ├── Queue.csv # Queue data
+│ ├── users.txt / otps.txt # Login data
+│ └── build.fxbuild # JavaFX build file
+
 
 ---
 
-## 🚀 Prerequisites
-- Java JDK 11+
-- Maven 3.6+
-- Eclipse IDE (or any IDE with Maven support)
-- JavaFX SDK (if not using the Maven dependency)
+## Features
+
+- **Product Management**  
+  Load and manage products using `products.csv`.
+
+- **User Login & OTP**  
+  Simple authentication using `users.txt` and `otps.txt`.
+
+- **Cart & Queue System**  
+  Add/remove products, simulate queues, stacks, and AVL trees via serialization.
+
+- **JavaFX GUI**  
+  Interactive graphical interface built with JavaFX.
+
+- **Flow Map & Wireframes**  
+  System flow and GUI design included via `.drawio` and `.pdf`.
+
+
+## Technologies Used
+
+- **Java 11+**
+- **JavaFX**
+- **Maven** (via `pom.xml`)
+- **Serialized Java Objects (`.ser`)**
+- **CSV files**
+- **Draw.io** (for diagrams)
 
 ---
 
-## 📥 Installation & Setup
-1. Download the Project from GitHub
-bash
-### 1. Clone the Repository
+## Diagrams
 
-git clone https://github.com/yourusername/yourrepository.git
-cd yourrepository
+- `GUI-wireframe.drawio` — GUI wireframe
+- `Shopping_cart_manage_system_flow_map.drawio/pdf` — System architecture
 
-## 2. Import into Eclipse IDE with Maven
-Open Eclipse.
+You can open `.drawio` files using [https://app.diagrams.net](https://app.diagrams.net) or import into compatible IDEs.
 
-Go to File → Import → Maven → Existing Maven Projects.
+---
 
-Select the root directory of your cloned repository.
+## How to Run
 
-Click Finish to import the project.
+```bash
+1. Clone the repository
+git clone https://github.com/yourusername/shopping-cart-system.git
+cd shopping-cart-system
 
-## 3. Configure VM Arguments for JavaFX
-Since the dependencies (including JavaFX) are managed in pom.xml, you only need to add the required modules via VM arguments.
+2. Open in your IDE (Eclipse/IntelliJ)
+Import it as a Maven Project.
 
-For Windows:
-Right-click your project → Run As → Run Configurations.
+3. Build the project
 
-Under Java Application, create a new configuration.
+mvn clean install
 
-Go to the Arguments tab.
+4. Run the application
+Make sure you have JavaFX SDK configured. Run:
 
-In VM Arguments, add:
+java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml -jar target/ShoppingCart.jar
+Replace /path/to/javafx-sdk/lib with the actual path to your JavaFX SDK.
 
-text
---add-modules javafx.controls,javafx.fxml
-Click Apply and then Run.
+Contributors:
+Developed by a passionate group of students as part of a university project.
 
-For Linux:
-The process is the same as Windows, but ensure JavaFX is properly installed (if not using Maven dependencies).
-
-## 4. Run the Project
-Right-click the project → Run As → Java Application (or use Maven commands).
-
-Alternatively, via command line (with Maven):
-
-bash
-mvn clean javafx:run
+Jahmari Harrison
+Daniel Morris
+Tyrese Dunbar
+Shemael Deslandes
+Andre
 
 
-
-## Troubleshooting
-If JavaFX is not detected, ensure:
-
-You have the correct JDK version.
-
-The VM arguments are properly set.
-
-Maven dependencies are resolved (check pom.xml).
-
-License
-(Specify your project's license here, e.g., MIT, GPL, etc.)
+## License
+This project is created for academic purposes only.
