@@ -59,9 +59,9 @@ You can open `.drawio` files using [https://app.diagrams.net](https://app.diagra
 
 # How to Run
 
-# 1. Clone the repository
-
 ```bash
+
+1. Clone the repository
 git clone https://github.com/yourusername/shopping-cart-system.git
 cd shopping-cart-system
 2. Open in your IDE (Eclipse/IntelliJ)
